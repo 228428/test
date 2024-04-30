@@ -32,8 +32,8 @@
     <body>
 
         <div class="row">
-            <div class="left-column"><div class="image-container"><img src="img/cir.png" height="200" width="200"/></div></div>
-            <div class="right-column"><div class="image-container"><img src="img/tri.png" height="200" width="200"/></div></div>
+            <div class="left-column"><div class="image-container"><img id="brain1" src="img/brain1.png"height="200" width="200"/></div></div>
+            <div class="right-column"><div class="image-container"><img id="lotus1" src="img/tri.png" height="200" width="200"/></div></div>
             <div class="center-column"><div class="image-container"><img src="img/squ.png" height="200" width="200"/></div></div>
         </div>
 
@@ -52,3 +52,32 @@
     </body>
     
 </html>
+<script>
+    const brain_sound = document.createElement ('Audio')
+    brain_sound.src = 'Audio/brain.mp3'
+
+    const brain1 = document.getElementById ('brain1')
+    brain1.onmousedown = () => {
+        brain1.src = `img/brain2.png`
+    }
+    brain1.onmouseup = () => {
+        brain1.src = `img/brain1.png`
+    }
+    brain1.onmousedown = () => {
+        brain_sound.play()
+    }
+
+    const lotus1_sound = document.createElement ('Audio')
+    lotus1.src = 'Audio/lotus.mp3'
+    const lotus1 = document.getElementById ('lotus1')
+    lotus1.onmousedown = () => {
+        lotus1.src = `img/rec.png`
+    }
+    lotus1.onmouseup = () => {
+        lotus1.src = `img/tri.png`
+    }
+    lotus1.onmousedown = () => {
+        lotus_sound.play()
+    }
+ 
+</script> 
