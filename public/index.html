@@ -1,131 +1,125 @@
 <!DOCTYPE html>
 <html>
-    
-    <head>
-        <title> calm icon</title>
 
-        <body style ="background-color: aliceblue;"></body>
+<head>
+    <title>calm icon</title>
+    <style>
+        body {
+            background-color: aliceblue;
+        }
 
-        <style>
-            .row{
-                margin-top:auto;
-            }
-            .column{
-                width:33%;
-                margin:auto;
-                text-align: center;
-                display: inline-block;
-            }
-            .image-container{
-                display: table-cell;
-                vertical-align: middle;
-                padding: auto;
-            }
-        </style>
-    </head>
+        .row {
+            margin-top: auto;
+        }
 
-    <body>
+        .column {
+            width: 33%;
+            margin: auto;
+            text-align: center;
+            display: inline-block;
+        }
 
-        <div class="row">
-            <div class="image-container"><img id="brain1" src="img/brain1.png" height = "300" width="300" /></div></div>
-            <div class="image-container"><img id="lotus1" src="img/tri.png"  height = "300" width="300" /></div></div>
-            <div class="image-container"><img id="waterfall1" src="img/squ.png" height = "300" width="300"/></div></div>
-        </div>
+        .image-container {
+            display: table-cell;
+            vertical-align: middle;
+            padding: auto;
+        }
+    </style>
+</head>
 
-        <div class="row">
-            <div class="image-container"><img id="meditation1" src="img/hex.png" height = "300" width="300" /></div></div>
-            <div class="image-container"><img id="rock1" src="img/rec.png" height = "300" width="300" /></div></div>
-            <div class="image-container"><img id="yoga1" src="img/sta.png" height = "300" width="300" /></div></div>
-        </div>
+<body>
 
-        <div class="row">
-            <div class="image-container"><img id="water1" src="img/trr.png" height = "300" width="300" /></div></div>
-            <div class="image-container"><img id="yinyang1" src="img/sqr.png" height = "300"width="300" /></div></div>
-            <div class="image-container"><img id="cup1" src="img/her.png" height = "300" width="300" /></div></div>
-        </html>
-   
-        <script>
+    <div class="row">
+        <div class="image-container"><img id="brain1" src="img/brain1.png" height="300" width="300" /></div>
+        <div class="image-container"><img id="lotus1" src="img/tri.png" height="300" width="300" /></div>
+        <div class="image-container"><img id="waterfall1" src="img/squ.png" height="300" width="300" /></div>
+    </div>
 
-            //01 brain
-            const brain_sound= document.createElement ('Audio')
-            brain_sound.src = 'Audio/brain.mp3'
+    <div class="row">
+        <div class="image-container"><img id="meditation1" src="img/hex.png" height="300" width="300" /></div>
+        <div class="image-container"><img id="rock1" src="img/rec.png" height="300" width="300" /></div>
+        <div class="image-container"><img id="yoga1" src="img/sta.png" height="300" width="300" /></div>
+    </div>
 
-            const brain1 = document.getElementById ('brain1')
-            brain1.onpointover = () => {
-                brain1.src='img/brain2.png'
-                brain_sound.play()
-    
-            }
-           //02 Lotus
-           const lotus_sound= document.createElement ('Audio')
-            lotus_sound.src = 'Audio/lotus.mp3'
+    <div class="row">
+        <div class="image-container"><img id="water1" src="img/trr.png" height="300" width="300" /></div>
+        <div class="image-container"><img id="yinyang1" src="img/sqr.png" height="300" width="300" /></div>
+        <div class="image-container"><img id="cup1" src="img/her.png" height="300" width="300" /></div>
+    </div>
 
-            const lotus1 = document.getElementById ('lotus1')
-            lotus1.onpointover = () => {
-                lotus1.src='img/lotus2.png'
-                lotus_sound.play()
-            };
-            //03 waterfall
-            const waterfall_sound= document.createElement ('Audio')
-            waterfall_sound.src = 'Audio/waterfall.mp3'
+    <script>
+        // 01 brain
+        const brain_sound = new Audio('Audio/brain.mp3');
+        const brain1 = document.getElementById('brain1');
+        brain1.onmouseover = () => {
+            brain1.src = 'img/brain2.png';
+            brain_sound.play();
+        }
 
-            const waterfall1 = document.getElementById ('waterfall')
-            waterfall1.onpointover = () => {
-                waterfall1.src='img/waterfall2.png'
-                waterfall_sound.play()
-            }
-            //04 meditation
-            const meditation_sound= document.createElement ('Audio')
-            meditation_sound.src = 'Audio/meditation.mp3'
+        // 02 Lotus
+        const lotus_sound = new Audio('Audio/lotus.mp3');
+        const lotus1 = document.getElementById('lotus1');
+        lotus1.onmouseover = () => {
+            lotus1.src = 'img/lotus2.png';
+            lotus_sound.play();
+        };
 
-            const brain1 = document.getElementById ('meditation1')
-            brain1.onpointover = () => {
-                brain1.src='img/meditation2.png'
-                brain_sound.play()
-            }
-            //05 rock
-            const rock_sound= document.createElement ('Audio')
-            rock_sound.src = 'Audio/rock.mp3'
+        // 03 waterfall
+        const waterfall_sound = new Audio('Audio/waterfall.mp3');
+        const waterfall1 = document.getElementById('waterfall1');
+        waterfall1.onmouseover = () => {
+            waterfall1.src = 'img/waterfall2.png';
+            waterfall_sound.play();
+        }
 
-            const rock1 = document.getElementById ('rock1')
-            rock1.onpointover = () => {
-                rock1.src='img/rock2.png'
-                rock_sound.play()
-            }
-            //06 yoga
-            const yoga_sound= document.createElement ('Audio')
-            yoga_sound.src = 'Audio/yoga.mp3'
+        // 04 meditation
+        const meditation_sound = new Audio('Audio/meditation.mp3');
+        const meditation1 = document.getElementById('meditation1');
+        meditation1.onmouseover = () => {
+            meditation1.src = 'img/meditation2.png';
+            meditation_sound.play();
+        }
 
-            const yoga1 = document.getElementById ('yoga1')
-            yoga1.onpointover = () => {
-                yoga1.src='img/yoga2.png'
-                yoga_sound.play()
-            }
-            //07 water
-            const water_sound= document.createElement ('Audio')
-            water_sound.src = 'Audio/water.mp3'
+        // 05 rock
+        const rock_sound = new Audio('Audio/rocks.mp3');
+        const rock1 = document.getElementById('rock1');
+        rock1.onmouseover = () => {
+            rock1.src = 'img/rocks2.png';
+            rock_sound.play();
+        }
 
-            const water1 = document.getElementById ('water1')
-            water1.onpointover = () => {
-                water1.src='img/water2.png'
-                water_sound.play()
-            }
-            //08 yinyang
-            const yinyang_sound= document.createElement ('Audio')
-            yinyang_sound.src = 'Audio/yinyang.mp3'
+        // 06 yoga
+        const yoga_sound = new Audio('Audio/yoga.mp3');
+        const yoga1 = document.getElementById('yoga1');
+        yoga1.onmouseover = () => {
+            yoga1.src = 'img/yoga2.png';
+            yoga_sound.play();
+        }
 
-            const yinyang1 = document.getElementById ('yinyang1')
-            yinyang1.onpointover = () => {
-                yinyang1.src='img/yinyang2.png'
-                yinyang_sound.play()
-            }
-            //09 cup
-            const cup_sound= document.createElement ('Audio')
-            cup_sound.src = 'Audio/cup.mp3'
+        // 07 water
+        const water_sound = new Audio('Audio/waterdrop.mp3');
+        const water1 = document.getElementById('water1');
+        water1.onmouseover = () => {
+            water1.src = 'img/water2.png';
+            water_sound.play();
+        }
 
-            const cup1 = document.getElementById ('cup1')
-            cup1.onpointover = () => {
-                cup1.src='img/cup2.png'
-                cup_sound.play()
-            }
-        </script> 
+        // 08 yinyang
+        const yinyang_sound = new Audio('Audio/yinyang.mp3');
+        const yinyang1 = document.getElementById('yinyang1');
+        yinyang1.onmouseover = () => {
+            yinyang1.src = 'img/yinyang2.png';
+            yinyang_sound.play();
+        }
+
+        // 09 cup
+        const cup_sound = new Audio('Audio/cup.mp3');
+        const cup1 = document.getElementById('cup1');
+        cup1.onmouseover = () => {
+            cup1.src = 'img/cup2.png';
+            cup_sound.play();
+        }
+    </script>
+</body>
+
+</html>
