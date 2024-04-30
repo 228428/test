@@ -2,7 +2,9 @@
 <html>
     
     <head>
-        <title>Icon Template Percentage</title>
+        <title>Calm Icon</title>
+
+        <body style = "background-color: antiquewhite;"></body>
         <style>
             .row{
                 margin-top:40px;
@@ -32,23 +34,108 @@
     <body>
 
         <div class="row">
-            <div class="left-column"><div class="image-container"><img src="img/cir.png" height="200" width="200"/></div></div>
-            <div class="right-column"><div class="image-container"><img src="img/tri.png" height="200" width="200"/></div></div>
-            <div class="center-column"><div class="image-container"><img src="img/squ.png" height="200" width="200"/></div></div>
+            <div class="left-column"><div class="image-container"><img id = "brain1" src="img/brain1.png" height="200" width="200"/></div></div>
+            <div class="right-column"><div class="image-container"><img id = "loyus1" src="img/tri.png" height="200" width="200"/></div></div>
+            <div class="center-column"><div class="image-container"><img id = "waterfall1" src="img/squ.png" height="200" width="200"/></div></div>
         </div>
 
         <div class="row">
-            <div class="left-column"><div class="image-container"><img src="img/hex.png" height="200" width="200"/></div></div>
-            <div class="right-column"><div class="image-container"><img src="img/rec.png" height="200" width="200"/></div></div>
-            <div class="center-column"><div class="image-container"><img src="img/sta.png" height="200" width="200"/></div></div>
+            <div class="left-column"><div class="image-container"><img id = "meditation1" src="img/hex.png" height="200" width="200"/></div></div>
+            <div class="right-column"><div class="image-container"><img id = "rock1" src="img/rec.png" height="200" width="200"/></div></div>
+            <div class="center-column"><div class="image-container"><img id= "yoga1" src="img/sta.png" height="200" width="200"/></div></div>
         </div>
 
         <div class="row">
-            <div class="left-column"><div class="image-container"><img src="img/trr.png" height="200" width="200"/></div></div>
-            <div class="right-column"><div class="image-container"><img src="img/sqr.png" height="200" width="200"/></div></div>
-            <div class="center-column"><div class="image-container"><img src="img/her.png" height="200" width="200"/></div></div>
+            <div class="left-column"><div class="image-container"><img id=" water1" src="img/trr.png" height="200" width="200"/></div></div>
+            <div class="right-column"><div class="image-container"><img id=" yinyang1" src="img/sqr.png" height="200" width="200"/></div></div>
+            <div class="center-column"><div class="image-container"><img id="cup1" src="img/her.png" height="200" width="200"/></div></div>
         </div>
 
     </body>
     
 </html>
+<script>
+
+    //01 brain
+    const brain_sound= document.createElement ('Audio')
+    brain_sound.src = 'Audio/brain.mp3'
+
+    const brain1 = document.getElementById ('brain1')
+    brain1.onpointover = () => {
+        brain1.src='img/brain2.png'
+        brain_sound.play()
+
+    }
+   //02 Lotus
+   const lotus_sound= document.createElement ('Audio')
+    lotus_sound.src = 'Audio/lotus.mp3'
+
+    const lotus1 = document.getElementById ('lotus1')
+    lotus1.onpointover = () => {
+        lotus1.src='img/lotus2.png'
+        lotus_sound.play()
+    };
+    //03 waterfall
+    const waterfall_sound= document.createElement ('Audio')
+    waterfall_sound.src = 'Audio/waterfall.mp3'
+
+    const waterfall1 = document.getElementById ('waterfall')
+    waterfall1.onpointover = () => {
+        waterfall1.src='img/waterfall2.png'
+        waterfall_sound.play()
+    }
+    //04 meditation
+    const meditation_sound= document.createElement ('Audio')
+    meditation_sound.src = 'Audio/meditation.mp3'
+
+    const brain1 = document.getElementById ('meditation1')
+    brain1.onpointover = () => {
+        brain1.src='img/meditation2.png'
+        brain_sound.play()
+    }
+    //05 rock
+    const rock_sound= document.createElement ('Audio')
+    rock_sound.src = 'Audio/rock.mp3'
+
+    const rock1 = document.getElementById ('rock1')
+    rock1.onpointover = () => {
+        rock1.src='img/rock2.png'
+        rock_sound.play()
+    }
+    //06 yoga
+    const yoga_sound= document.createElement ('Audio')
+    yoga_sound.src = 'Audio/yoga.mp3'
+
+    const yoga1 = document.getElementById ('yoga1')
+    yoga1.onpointover = () => {
+        yoga1.src='img/yoga2.png'
+        yoga_sound.play()
+    }
+    //07 water
+    const water_sound= document.createElement ('Audio')
+    water_sound.src = 'Audio/water.mp3'
+
+    const water1 = document.getElementById ('water1')
+    water1.onpointover = () => {
+        water1.src='img/water2.png'
+        water_sound.play()
+    }
+    //08 yinyang
+    const yinyang_sound= document.createElement ('Audio')
+    yinyang_sound.src = 'Audio/yinyang.mp3'
+
+    const yinyang1 = document.getElementById ('yinyang1')
+    yinyang1.onpointover = () => {
+        yinyang1.src='img/yinyang2.png'
+        yinyang_sound.play()
+    }
+    //09 cup
+    const cup_sound= document.createElement ('Audio')
+    cup_sound.src = 'Audio/cup.mp3'
+
+    const cup1 = document.getElementById ('cup1')
+    cup1.onpointover = () => {
+        cup1.src='img/cup2.png'
+        cup_sound.play()
+    }
+</script> 
