@@ -51,73 +51,100 @@
         // 01 brain
         const brain_sound = new Audio('Audio/brain.mp3');
         const brain1 = document.getElementById('brain1');
-        brain1.onmouseover = () => {
+        brain1.onmousedown = () => {
             brain1.src = 'img/brain2.png';
-            brain_sound.play();
-        }
+            brain_sound.play()
+            }
+            brain1.onmouseup =() => {    
+                brain1.src = 'img/brain1.png'
+            }
 
         // 02 Lotus
         const lotus_sound = new Audio('Audio/lotus.mp3');
         const lotus1 = document.getElementById('lotus1');
-        lotus1.onmouseover = () => {
-            lotus1.src = 'img/lotus2.png';
+        lotus1.onmousedown = () => {
+            lotus1.src = 'img/lotus2.png';    
             lotus_sound.play();
-        };
+            }
+            lotus1.onmouseup =() => {    
+                lotus1.src = 'img/tri.png'
+        }
 
         // 03 waterfall
         const waterfall_sound = new Audio('Audio/waterfall.mp3');
         const waterfall1 = document.getElementById('waterfall1');
-        waterfall1.onmouseover = () => {
+        waterfall1.onmousedown = () => {
             waterfall1.src = 'img/waterfall2.png';
             waterfall_sound.play();
+            }
+            waterfall1.onmouseup =() => {
+                waterfall1.src='img/squ.png'
         }
 
         // 04 meditation
         const meditation_sound = new Audio('Audio/meditation.mp3');
         const meditation1 = document.getElementById('meditation1');
-        meditation1.onmouseover = () => {
+        meditation1.onmousedown = () => {
             meditation1.src = 'img/meditation2.png';
             meditation_sound.play();
+        }
+            meditation1.onmouseup =() => {
+                meditation1.src='img/hex.png'
         }
 
         // 05 rock
         const rock_sound = new Audio('Audio/rocks.mp3');
         const rock1 = document.getElementById('rock1');
-        rock1.onmouseover = () => {
+        rock1.onmousedown = () => {
             rock1.src = 'img/rocks2.png';
             rock_sound.play();
+        }
+            rocks1.onmouseup =() => {
+                rocks1.src='img/rec.png'
         }
 
         // 06 yoga
         const yoga_sound = new Audio('Audio/yoga.mp3');
         const yoga1 = document.getElementById('yoga1');
-        yoga1.onmouseover = () => {
+        yoga1.onmousedown = () => {
             yoga1.src = 'img/yoga2.png';
             yoga_sound.play();
+        }
+            yoga1.onmouseup =() => {
+                yoga1.src='img/sta.png'
         }
 
         // 07 water
         const water_sound = new Audio('Audio/waterdrop.mp3');
         const water1 = document.getElementById('water1');
-        water1.onmouseover = () => {
+        water1.onmousedown = () => {
             water1.src = 'img/water2.png';
             water_sound.play();
+        }
+            water1.onmouseup =() => {
+                water1.src='img/trr.png'
         }
 
         // 08 yinyang
         const yinyang_sound = new Audio('Audio/yinyang.mp3');
         const yinyang1 = document.getElementById('yinyang1');
-        yinyang1.onmouseover = () => {
+        yinyang1.onmousedown = () => {
             yinyang1.src = 'img/yinyang2.png';
             yinyang_sound.play();
+        }
+            yinyang1.onmouseup =() => {
+                yinyang1.src='img/sqr.png'
         }
 
         // 09 cup
         const cup_sound = new Audio('Audio/cup.mp3');
         const cup1 = document.getElementById('cup1');
-        cup1.onmouseover = () => {
+        cup1.onmousedown = () => {
             cup1.src = 'img/cup2.png';
             cup_sound.play();
+        }
+            cup1.onmouseup =() => {
+                cup1.src='img/her.png'
         }
     </script>
 </body>
